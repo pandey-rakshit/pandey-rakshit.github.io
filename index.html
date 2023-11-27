@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Rakshit</title>
+    <!-- Links and CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div>
+            <svg
+              width="140"
+              height="100"
+              viewBox="0 0 200 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <text x="0" y="50" fill="#ff004f">R</text>
+              <text x="35" y="50" fill="#ffffff">akshit</text>
+            </svg>
+          </div>
+
+          <ul id="sidemenu">
+            <li>
+              <a href="#header"><i class="fa-solid fa-house icon"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user icon"></i> About</a>
+            </li>
+            <li>
+              <a href="#services"
+                ><i class="fa-solid fa-laptop icon"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><i class="fa-solid fa-newspaper icon"></i> Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-address-book icon"></i> Contact</a
+              >
+            </li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer / Data Engineer Enthusiast</p>
+          <h1>
+            Hi <span class="wave">✋🏻</span> <br />
+            I'm <span>Rakshit</span><br />
+            <span>Pandey</span> From INDIA 🇮🇳
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="https://i.ibb.co/vVtCspH/user.jpg" alt="about me" />
+          </div>
+          <div class="col2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A seasoned software engineer with 1.2+ years of experience,
+              transitioning into the dynamic realm of data engineering and
+              analytics. Specializing in the MERN stack, I bring a fresh
+              perspective and a hunger for learning to the world of data. Fueled
+              by a passion for technology and problem-solving, I am excited to
+              leverage my software engineering background to make impactful
+              contributions in the ever-evolving field of data science. Let's
+              embark on this data-driven adventure together!
+            </p>
+
+            <div class="tab-title">
+              <!-- <i class="fa-solid fa-bars" onclick="openTabMenu()"></i> -->
+              <div class="tab-menu">
+                <p class="tab-links active" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('certification')">
+                  Certifications
+                </p>
+              </div>
+            </div>
+            <div class="tab-content active" id="skills">
+              <div>
+                <img
+                  src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white"
+                  alt="Python"
+                />
+                <img
+                  src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"
+                  alt="MySQL"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+                  alt="Docker"
+                />
+
+                <!-- <img
+                  src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white"
+                  alt="Tableau"
+                /> -->
+
+                <img
+                  src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"
+                  alt="aws"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"
+                  alt="git"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+                  alt="markdown"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
+                  alt="Express"
+                />
+                <img
+                  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                  alt="javascript"
+                />
+                <img
+                  src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                  alt="nodejs"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                  alt="html5"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"
+                  alt="heroku"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/json%20web%20tokens-323330?style=for-the-badge&logo=json-web-tokens&logoColor=pink"
+                  alt="jwt"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white"
+                  alt="mac-os"
+                />
+                <img
+                  src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+                  alt="windows"
+                />
+              </div>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>July 2022 - March 2023</span>
+                  SquareBoat Solution Pvt. Ltd
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech (2018-2022)</span>
+                  Computer Science and Engineer from Roorkee Institute of
+                  Technology, Uttarakhand Technical University
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="certification">
+              <ul>
+                <li>
+                  <a
+                    href="https://i.ibb.co/s2jsQJh/sql-for-data-science.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.ibb.co/s2jsQJh/sql-for-data-science.jpg"
+                      alt="sql-for-data-science"
+                      class="thumbnail certificate"
+                    />
+                    <span>SQL for Data Science</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://i.ibb.co/0tJk1ZJ/python-for-data-science-development.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.ibb.co/0tJk1ZJ/python-for-data-science-development.jpg"
+                      alt="python-for-data-science-development"
+                      class="thumbnail certificate"
+                    />
+                    <span>Python for Data Science, AI & Development</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://i.ibb.co/pK5dysh/aws.jpg" target="_blank">
+                    <img
+                      src="https://i.ibb.co/pK5dysh/aws.jpg"
+                      alt="aws"
+                      class="thumbnail certificate"
+                    />
+                    <span>AWS Cloud Practitioner Essentials</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://i.ibb.co/L5LKVGm/intro-to-git-github.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.ibb.co/L5LKVGm/intro-to-git-github.jpg"
+                      alt="intro-to-git-github"
+                      class="thumbnail certificate"
+                    />
+                    <span>Introduction to Git and Github</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://i.ibb.co/B2VCHr7/Cognitiveclass-PY0101-EN-Certificate-Cognitive-Class-page-0001.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.ibb.co/B2VCHr7/Cognitiveclass-PY0101-EN-Certificate-Cognitive-Class-page-0001.jpg"
+                      alt="Python 101"
+                      class="thumbnail certificate"
+                    />
+                    <span>Python 101 for Data Science</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://i.ibb.co/C8s4D2b/html-css-js-for-web-developer.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://i.ibb.co/C8s4D2b/html-css-js-for-web-developer.jpg"
+                      alt="html-css-js-for-web-developer"
+                      class="thumbnail certificate"
+                    />
+                    <span>HTML, CSS, and Javascript for Web developers</span>
+                  </a>
+                </li>
+                <!-- <img
+                  src="https://i.ibb.co/jMMVTTG/docker.jpg"
+                  alt="docker"
+                /> -->
+                <!-- <img
+                  src="https://i.ibb.co/8YZdnvN/intro-to-css3.jpg"
+                  alt="intro-to-css3"
+                /> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code icon"></i>
+            <h2>Data Engineering &amp; Analysis</h2>
+            <p>
+              Transforming raw data into valuable insights, I offer end-to-end
+              data engineering services. From data extraction and processing to
+              integration and storage, I ensure a robust foundation for your
+              analytics needs.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios icon"></i>
+            <h2>Software Engineering</h2>
+            <p>
+              With over 1.2 years of experience, I offer expertise in developing
+              and optimizing software solutions. From scalable backend systems
+              to user-friendly interfaces, I bring a holistic approach to
+              software engineering, ensuring seamless functionality and user
+              satisfaction.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-server icon"></i>
+            <h2>Database Design</h2>
+            <p>
+              Crafting the backbone of your data infrastructure, I provide
+              expert database design services. Tailored to your needs, my
+              solutions optimize data storage, retrieval, and management,
+              ensuring efficiency and reliability.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./public/images/work-1.png" alt="work-sample-1" />
+            <div class="layer">
+              <h3>Swiggy clone</h3>
+              <p>
+                A Swiggy (clone) website built using ReactJS would have similar
+                features and functionality as the original Swiggy platform. It
+                would allow users to browse and search for their favorite
+                restaurant, food items.
+              </p>
+              <a
+                href="https://github.com/pandey-rakshit/swiggy-clone"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./public/images/work-2.png" alt="work-sample-2" />
+            <div class="layer">
+              <h3>Amazone</h3>
+              <p>
+                Amazone is the e-commerce website which is built using Nodejs
+                SSR (server-side-rendering)
+              </p>
+              <a
+                href="https://github.com/pandey-rakshit/Amazone"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./public/images/work-3.png" alt="work-sample-3" />
+            <div class="layer">
+              <h3>Edu Ford</h3>
+              <p>
+                Edu Ford is a school website template build using HTML CSS and
+                Javascript
+              </p>
+              <a
+                href="https://github.com/pandey-rakshit/eduFord"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a onclick="showMoreWork()" class="btn">View More</a> -->
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane icon"></i>
+              pandeyrakshit03@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone icon"></i> +917505286992</p>
+            <div class="social-icon">
+              <a
+                href="https://www.linkedin.com/in/pandey-rakshit"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin icon"></i
+              ></a>
+              <a href="https://www.github.com/pandey-rakshit" target="_blank"
+                ><i class="fa-brands fa-github icon"></i
+              ></a>
+              <a href="https://www.facebook.com/pandeyrakshit03" target="_blank"
+                ><i class="fa-brands fa-facebook icon"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rakshit__pandey/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram icon"></i
+              ></a>
+            </div>
+            <a
+              href="https://bit.ly/download_resume__pandey-rakshit"
+              class="btn btn2"
+              target="_blank"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="col2">
+            <form name="submit-to-google-sheet">
+              <input type="text" placeholder="Your Name" name="name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &copy; pandey-rakshit</p>
+      </div>
+    </div>
+
+    <script src="./public/script.js"></script>
+  </body>
+</html>
